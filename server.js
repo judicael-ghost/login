@@ -8,7 +8,7 @@ const bodyParser = require("express").json;
 const UserRouter = require("./api/User");
 
 app.use(bodyParser());
-app.use(express.urlencoded({ extended : true}));
+app.use(express.urlencoded({ extended : true}))
 
 app.use("/user", UserRouter);
 
